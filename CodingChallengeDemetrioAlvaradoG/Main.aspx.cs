@@ -50,7 +50,7 @@ namespace CodingChallengeDemetrioAlvaradoG
                 updateProductStock(1, productLabels[0].quantity - prodQty1);
                 updateProductStock(2, productLabels[1].quantity - prodQty2);
                 updateProductStock(3, productLabels[2].quantity - prodQty3);
-                lblOrder.Text = $"Ordered Coke {prodQty1}- Pepsi{prodQty2}-Soda {prodQty3}";
+                lblOrder.Text = $"Ordered Coke {prodQty1},  Pepsi{prodQty2},  Soda {prodQty3}";
                 loadProductLabelsAndStock();
                 getCoinsReturned(change);
                 cleanMachine();

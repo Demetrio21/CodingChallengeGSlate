@@ -5,19 +5,19 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<link href="Main.css" rel="stylesheet" type="text/css" />
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>CodingChallenge</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="main-body">
             <h1>Coins Information</h1>
-            <div>Get Drinks <asp:Label ID="lblMachineMoney" runat="server" Text=""></asp:Label></div>
+            <div class="lbl-st"> <asp:Label ID="lblMachineMoney" runat="server" Text=""></asp:Label></div>
             <div class="row">
                 <% foreach(var item in coinLabels){ %>
-                <div class="col-md-3">  
+                <div class="col-md-3 lbl-st">  
                 <%= item.name %>
                 </div>
                 <% } %>
@@ -114,7 +114,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
-                            <div  class="col-md-6" >
+                            <div  class="col-md-6 lbl-st" >
                                 <asp:Label ID="lblProd1" runat="server" Text="Label"></asp:Label>
                                 <asp:Label ID="lblProd1Details" runat="server" Text="Label"></asp:Label>
                             </div>
@@ -125,18 +125,18 @@
                         </div>
                         <div class="col-md-12">
                             <div class="row">
-                            <div  class="col-md-6" >
+                            <div  class="col-md-6 lbl-st" >
                                 <asp:Label ID="lblProd2" runat="server"  Text="Label"></asp:Label>
                                 <asp:Label ID="lblProd2Details" runat="server" Text="Label"></asp:Label>
                             </div>
-                            <div  class="col-md-6" >
+                            <div  class="col-md-6 lbl-st" >
                                 <asp:TextBox ID="txtProd2" runat="server" AutoPostBack="true" OnTextChanged="getTotal_TextChanged">0</asp:TextBox>
                             </div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="row">
-                            <div  class="col-md-6" >
+                            <div  class="col-md-6 lbl-st" >
                                 <asp:Label ID="lblProd3" runat="server" Text="Label "></asp:Label>
                                 <asp:Label ID="lblProd3Details" runat="server" Text="Label"></asp:Label>
                             </div>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 lbl-st">
                     <div>
                         Order Total
                     </div>
@@ -157,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div> 
+            <div class="lbl-st"> 
                 <asp:Label ID="lblChange" runat="server" Text=""></asp:Label>
                 <asp:Label ID="lblOrder" runat="server" Text=""></asp:Label>
             </div>
